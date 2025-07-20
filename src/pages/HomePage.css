@@ -1,0 +1,168 @@
+.home-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem; /* Added side padding for mobile */
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8fbff;
+}
+
+.home-header {
+  font-size: 3rem;
+  color: #2d3e50;
+  margin-bottom: 0.5rem;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #4e5d6c;
+  margin-bottom: 2rem;
+}
+
+.feature-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  color: #1a73e8;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: #333;
+}
+
+.info-section {
+  text-align: left;
+  background-color: #e8f0fe;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.info-section h2 {
+  margin-bottom: 1rem;
+  color: #1a237e;
+}
+
+.info-section ol {
+  margin-left: 1.2rem;
+  color: #37474f;
+}
+
+.home-footer {
+  background-color: #e3f2fd;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #0d47a1;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.login-call {
+  background-color: #fefae0;
+  padding: 2rem 1rem;
+  margin: 2rem auto;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-call h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.login-call p {
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
+}
+
+.get-started-button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #45a049;
+}
+
+/* ✅ Responsive Media Queries */
+@media (max-width: 768px) {
+  .home-header {
+    font-size: 2.2rem;
+  }
+
+  .home-subtitle {
+    font-size: 1rem;
+  }
+
+  .feature-card {
+    padding: 1rem;
+  }
+
+  .login-call h2 {
+    font-size: 1.4rem;
+  }
+
+  .login-call p {
+    font-size: 1rem;
+  }
+
+  .get-started-button {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1.05rem;
+  }
+
+  .info-section {
+    padding: 1rem;
+  }
+
+  .info-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .info-section ol {
+    padding-left: 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-header {
+    font-size: 1.8rem;
+  }
+
+  .feature-section {
+    grid-template-columns: 1fr;
+  }
+
+  .get-started-button {
+    font-size: 1rem;
+  }
+}

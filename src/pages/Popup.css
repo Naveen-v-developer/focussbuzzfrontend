@@ -1,0 +1,56 @@
+.popup-message {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeInOut 3s ease forwards;
+  z-index: 999;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Add different gradient backgrounds */
+.popup-success {
+  background: linear-gradient(to right, #28a745, #218838);
+}
+
+.popup-update {
+  background: linear-gradient(to right, #ffc107, #ffb300);
+  color: #000;
+}
+
+.popup-delete {
+  background: linear-gradient(to right, #dc3545, #c82333);
+}
+
+.popup-complete {
+  background: linear-gradient(to right, #17a2b8, #138496);
+}
+
+.popup-revert {
+  background: linear-gradient(to right, #6f42c1, #5936a2);
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  90% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+}

@@ -1,0 +1,8 @@
+// playSound.js
+import popup from '../assets/popup.wav';
+
+const play = () => {
+  new Audio(popup).play();
+};
+
+export default play;
