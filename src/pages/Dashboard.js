@@ -28,7 +28,7 @@ const Dashboard = () => {
     const token = localStorage.getItem("token");
 
     try {
-      await fetch("https://focussbuzzbackend-2.onrender.com/api/session/end", {
+      await fetch("https://focussbuzzbackend-4.onrender.com/api/session/end", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
