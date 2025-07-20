@@ -55,7 +55,7 @@ const Timer = () => {
 
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("https://focussbuzzbackend-2.onrender.com/api/session/start", {
+      const res = await fetch("https://focussbuzzbackend-4.onrender.com/api/session/start", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -87,7 +87,7 @@ const Timer = () => {
 
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch("https://focussbuzzbackend-2.onrender.com/api/session/end", {
+      const res = await fetch("https://focussbuzzbackend-4.onrender.com/api/session/end", {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -116,7 +116,7 @@ const Timer = () => {
     try {
       const token = localStorage.getItem("token");
 
-      const sessionRes = await fetch("https://focussbuzzbackend-2.onrender.com/api/session/history", {
+      const sessionRes = await fetch("https://focussbuzzbackend-4.onrender.com/api/session/history", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
