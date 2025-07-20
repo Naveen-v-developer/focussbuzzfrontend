@@ -34,7 +34,7 @@ const TaskPage = () => {
 
   const fetchTasks = async () => {
     try {
-      const res = await fetch("https://focussbuzzbackend-2.onrender.com/api/tasks", {
+      const res = await fetch("https://focussbuzzbackend-4.onrender.com/api/tasks", {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -57,7 +57,7 @@ play()
     }
 
     try {
-      const res = await fetch("https://focussbuzzbackend-2.onrender.com/api/tasks", {
+      const res = await fetch("https://focussbuzzbackend-4.onrender.com/api/tasks", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -90,7 +90,7 @@ play()
  
   
   try {
-    await fetch(`https://focussbuzzbackend-2.onrender.com/api/tasks/${id}`, {
+    await fetch(`https://focussbuzzbackend-4.onrender.com/api/tasks/${id}`, {
       method: "DELETE",
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -107,7 +107,7 @@ play()
 
   const handleUpdate = async (id) => {
     try {
-      await fetch(`https://focussbuzzbackend-2.onrender.com/api/tasks/${id}`, {
+      await fetch(`https://focussbuzzbackend-4.onrender.com/api/tasks/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -130,7 +130,7 @@ play()
 
   const handleToggleComplete = async (id) => {
     try {
-      await fetch(`https://focussbuzzbackend-2.onrender.com/api/tasks/${id}/complete`, {
+      await fetch(`https://focussbuzzbackend-4.onrender.com/api/tasks/${id}/complete`, {
         method: "PATCH",
         headers: { Authorization: `Bearer ${token}` },
       });
