@@ -34,7 +34,7 @@ const Register = () => {
     setError('');
 
     try {
-      const res = await fetch('https://focussbuzzbackend-2.onrender.com/api/auth/register', {
+      const res = await fetch('https://focussbuzzbackend-4.onrender.com/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
