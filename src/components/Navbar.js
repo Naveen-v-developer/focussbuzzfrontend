@@ -27,7 +27,7 @@ function Navbar() {
 
   const handleLogout = async () => {
     try {
-      await fetch("https://focussbuzzbackend-3.onrender.com/api/session/end", {
+      await fetch("https://focussbuzzbackend-4.onrender.com/api/session/end", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -35,7 +35,7 @@ function Navbar() {
         },
       });
 
-      const res = await fetch("https://focussbuzzbackend-3.onrender.com/api/auth/logout", {
+      const res = await fetch("https://focussbuzzbackend-4.onrender.com/api/auth/logout", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
