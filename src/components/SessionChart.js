@@ -17,7 +17,7 @@ const SessionChart = () => {
     const fetchSessionData = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("https://focussbuzzbackend-2.onrender.com/api/session/history", {
+        const res = await axios.get("https://focussbuzzbackend-4.onrender.com/api/session/history", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
